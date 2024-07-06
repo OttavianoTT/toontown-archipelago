@@ -343,8 +343,8 @@ class MaxToon(MagicWord):
         toon.b_setCogLevels([ToontownGlobals.MaxCogSuitLevel] * 4)
         toon.b_setCogTypes([7] * 4)
 
-        toon.b_setCogCount([CogPageGlobals.get_max_cog_quota(toon)] * 8 * 4)
-        cogStatus = [CogPageGlobals.COG_COMPLETE2] * SuitDNA.suitsPerDept
+        toon.b_setCogCount([CogPageGlobals.get_max_cog_quota(toon)] * 9 * 4)
+        cogStatus = [CogPageGlobals.COG_COMPLETE2] * (SuitDNA.suitsPerDept + 1)
         toon.b_setCogStatus(cogStatus * 4)
         toon.b_setCogRadar([1] * 4)
         toon.b_setBuildingRadar([1] * 4)

@@ -71,6 +71,8 @@ class Rule(Enum):
     TierEightLawbot  = auto()
     TierEightBossbot = auto()
 
+    TierBossLawbot  = auto()
+
     ### Facility Keys ###
 
     FrontFactoryKey = auto()

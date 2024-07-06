@@ -39,6 +39,7 @@ def cog_code_to_ap_location(cog_code: str) -> str:
         'sd': (ToontownLocationName.SPIN_DOCTOR_DEFEATED.value, ToontownLocationName.SPIN_DOCTOR_MAXED.value),
         'le': (ToontownLocationName.LEGAL_EAGLE_DEFEATED.value, ToontownLocationName.LEGAL_EAGLE_MAXED.value),
         'bw': (ToontownLocationName.BIG_WIG_DEFEATED.value, ToontownLocationName.BIG_WIG_MAXED.value),
+        'clerk': (ToontownLocationName.CLERK_DEFEATED.value, ToontownLocationName.BIG_WIG_MAXED.value),
 
         'f': (ToontownLocationName.FLUNKY_DEFEATED.value, ToontownLocationName.FLUNKY_MAXED.value),
         'p': (ToontownLocationName.PENCIL_PUSHER_DEFEATED.value, ToontownLocationName.PENCIL_PUSHER_MAXED.value),

@@ -1202,6 +1202,30 @@ __BIG_WIG_ATTACKS.add(SuitAttackAttribute(
 __BIG_WIG: SuitAttributes = SuitAttributes(key='bw', name=TTLocalizer.SuitBigWig, singular=TTLocalizer.SuitBigWigS, plural=TTLocalizer.SuitBigWigP, tier=7, attacks=__BIG_WIG_ATTACKS)
 __registerSuitAttributes(__BIG_WIG)
 
+__CLERK_ATTACKS = set()
+__CLERK_ATTACKS.add(SuitAttackAttribute(
+    attack=SuitAttackType.GUILT_TRIP,
+    damage={25: 24,},
+    accuracy=60,
+    weight=50,
+))
+
+# todo code animation for this
+# __CLERK_ATTACKS.add(SuitAttackAttribute(
+#     attack=SuitAttackType.THROW_BOOK,
+#     damage={8: 16, 9: 18, 10: 20, 11: 22, 12: 24},
+#     accuracy=80,
+#     weight=50,
+# ))
+
+__CLERK_ATTACKS.add(SuitAttackAttribute(
+    attack=SuitAttackType.MUMBO_JUMBO,
+    damage={25: 26,},
+    accuracy=80,
+    weight=50,
+))
+__CLERK: SuitAttributes = SuitAttributes(key='clerk', name=TTLocalizer.SuitClerk, singular=TTLocalizer.SuitClerkS, plural=TTLocalizer.SuitClerkP, tier=24, attacks=__CLERK_ATTACKS)
+__registerSuitAttributes(__CLERK)
 
 """
 Helper methods for retrieving suit vitals and attack information.

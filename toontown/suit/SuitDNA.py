@@ -48,7 +48,8 @@ suitHeadTypes = [
     'ms',
     'tf',
     'm',
-    'mh'
+    'mh',
+    'clerk'
 ]
 
 suitATypes = [
@@ -65,7 +66,8 @@ suitATypes = [
     'nd',
     'tf',
     'm',
-    'mh'
+    'mh',
+    'clerk'
 ]
 
 suitBTypes = [
@@ -494,7 +496,8 @@ GENERAL_SUIT_VISUALS: Set[SuitVisual] = {
     SuitVisual('ms',  4.75 / bSize,  salesPolyColor,                None,                         None,                   'movershaker',         6.7),
     SuitVisual('tf',  5.25 / aSize,  salesPolyColor,                None,                         None,                   'twoface',             6.95),
     SuitVisual('m',   5.75 / aSize,  salesPolyColor,                None,                         'mingler.jpg',          'twoface',             7.61),
-    SuitVisual('mh',  7.0 / aSize,   salesPolyColor,                None,                         None,                   'yesman',              8.95)
+    SuitVisual('mh',  7.0 / aSize,   salesPolyColor,                None,                         None,                   'yesman',              8.95),
+    SuitVisual('clerk',  7.0 / aSize,   legalPolyColor,                None,                         None,                   'bigwig',              8.69),
 }
 
 SuitClotheParts = ['blazer', 'leg', 'sleeve']
@@ -543,6 +546,7 @@ def getWaiterClotheTexture():
 
 CUSTOM_SUIT_CLOTHES: Set[CustomSuitClothes] = set()
 
+customSuitToDept = {'clerk': 'l',}
 
 def getSuitDept(name):
     index = suitHeadTypes.index(name)
@@ -554,6 +558,8 @@ def getSuitDept(name):
         return suitDepts[2]
     elif index < suitsPerDept * 4:
         return suitDepts[3]
+    elif name in customSuitToDept:
+        return customSuitToDept[name]
     else:
         print('Unknown dept for suit name: ', name)
         return None
@@ -617,7 +623,7 @@ class SuitDNA(AvatarDNA.AvatarDNA):
         dg = PyDatagram()
         dg.addFixedString(self.type, 1)
         if self.type == 's':
-            dg.addFixedString(self.name, 3)
+            dg.addFixedString(self.name, 15)
             dg.addFixedString(self.dept, 1)
         elif self.type == 'b':
             dg.addFixedString(self.dept, 1)
@@ -632,7 +638,7 @@ class SuitDNA(AvatarDNA.AvatarDNA):
         dgi = PyDatagramIterator(dg)
         self.type = dgi.getFixedString(1)
         if self.type == 's':
-            self.name = dgi.getFixedString(3)
+            self.name = dgi.getFixedString(15)
             self.dept = dgi.getFixedString(1)
             self.body = getSuitBodyType(self.name)
         elif self.type == 'b':

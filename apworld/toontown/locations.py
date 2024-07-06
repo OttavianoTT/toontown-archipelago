@@ -43,6 +43,7 @@ class ToontownLocationName(Enum):
     MR_HOLLYWOOD_DEFEATED =                     "Cog Gallery (Mr. Hollywood)"
     ROBBER_BARRON_DEFEATED =                    "Cog Gallery (Robber Baron)"
     BIG_WIG_DEFEATED =                          "Cog Gallery (Big Wig)"
+    CLERK_DEFEATED =                          "Cog Gallery (Big Wig)"
     BIG_CHEESE_DEFEATED =                       "Cog Gallery (Big Cheese)"
     COLD_CALLER_MAXED =                         "Cog Gallery Maxed (Cold Caller)"
     SHORT_CHANGE_MAXED =                        "Cog Gallery Maxed (Short Change)"
@@ -716,7 +717,8 @@ LOCATION_DEFINITIONS: List[ToontownLocationDefinition] = [
     ToontownLocationDefinition(ToontownLocationName.CORPORATE_RAIDER_DEFEATED,  ToontownLocationType.GALLERY,     ToontownRegionName.GALLERY, [Rule.TierEightBossbot]),
     ToontownLocationDefinition(ToontownLocationName.MR_HOLLYWOOD_DEFEATED,      ToontownLocationType.GALLERY,     ToontownRegionName.GALLERY, [Rule.TierEightSellbot]),
     ToontownLocationDefinition(ToontownLocationName.ROBBER_BARRON_DEFEATED,     ToontownLocationType.GALLERY,     ToontownRegionName.GALLERY, [Rule.TierEightCashbot]),
-    ToontownLocationDefinition(ToontownLocationName.BIG_WIG_DEFEATED,           ToontownLocationType.GALLERY,     ToontownRegionName.GALLERY, [Rule.TierEightLawbot]),
+    ToontownLocationDefinition(ToontownLocationName.BIG_WIG_DEFEATED,           ToontownLocationType.GALLERY,     ToontownRegionName.GALLERY, [Rule.TierBossLawbot]),
+    ToontownLocationDefinition(ToontownLocationName.CLERK_DEFEATED,           ToontownLocationType.GALLERY,     ToontownRegionName.GALLERY, [Rule.TierEightLawbot]),
     ToontownLocationDefinition(ToontownLocationName.BIG_CHEESE_DEFEATED,        ToontownLocationType.GALLERY,     ToontownRegionName.GALLERY, [Rule.TierEightBossbot]),
     # endregion
     # region Cog Gallery Maxing

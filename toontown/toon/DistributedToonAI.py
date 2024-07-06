@@ -4596,7 +4596,7 @@ class DistributedToonAI(DistributedPlayerAI.DistributedPlayerAI, DistributedSmoo
         cogCount = self.getCogCount()
         for suitIndex, suitCode in enumerate(SuitDNA.suitHeadTypes):
             cogStatus[suitIndex] = CogPageGlobals.COG_UNSEEN
-            cogCount[suitIndex] = 0
+        cogCount = [0] * len(SuitDNA.suitHeadTypes)
         self.b_setCogStatus(cogStatus)
         self.b_setCogCount(cogCount)
         self.b_setCogRadar([0] * 4)
