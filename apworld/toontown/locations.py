@@ -407,21 +407,29 @@ class ToontownLocationName(Enum):
     A_OFFICE_BARREL_2 =                         "A Office Platform Barrel (Floor 2)"
     A_OFFICE_BARREL_3 =                         "A Office Battle Barrel (Floor 1)"
     A_OFFICE_BARREL_4 =                         "A Office Battle Barrel (Floor 2)"
+    A_OFFICE_BARREL_5 =                         "A Office Lobbying Battle Barrel (Floor 1)"
+    A_OFFICE_BARREL_6 =                         "A Office Lobbying Battle Barrel (Floor 2)"
     CLEAR_A_OFFICE =                            "A Office Cleared"
     B_OFFICE_BARREL_1 =                         "B Office Platform Barrel (Floor 1)"
     B_OFFICE_BARREL_2 =                         "B Office Platform Barrel (Floor 2)"
     B_OFFICE_BARREL_3 =                         "B Office Battle Barrel (Floor 1)"
     B_OFFICE_BARREL_4 =                         "B Office Battle Barrel (Floor 2)"
+    B_OFFICE_BARREL_5 =                         "B Office Lobbying Battle Barrel (Floor 1)"
+    B_OFFICE_BARREL_6 =                         "B Office Lobbying Battle Barrel (Floor 2)"
     CLEAR_B_OFFICE =                            "B Office Cleared"
     C_OFFICE_BARREL_1 =                         "C Office Platform Barrel (Floor 1)"
     C_OFFICE_BARREL_2 =                         "C Office Platform Barrel (Floor 2)"
     C_OFFICE_BARREL_3 =                         "C Office Battle Barrel (Floor 1)"
     C_OFFICE_BARREL_4 =                         "C Office Battle Barrel (Floor 2)"
+    C_OFFICE_BARREL_5 =                         "C Office Lobbying Battle Barrel (Floor 1)"
+    C_OFFICE_BARREL_6 =                         "C Office Lobbying Battle Barrel (Floor 2)"
     CLEAR_C_OFFICE =                            "C Office Cleared"
     D_OFFICE_BARREL_1 =                         "D Office Platform Barrel (Floor 1)"
     D_OFFICE_BARREL_2 =                         "D Office Platform Barrel (Floor 2)"
     D_OFFICE_BARREL_3 =                         "D Office Battle Barrel (Floor 1)"
     D_OFFICE_BARREL_4 =                         "D Office Battle Barrel (Floor 2)"
+    D_OFFICE_BARREL_5 =                         "D Office Lobbying Battle Barrel (Floor 1)"
+    D_OFFICE_BARREL_6 =                         "D Office Lobbying Battle Barrel (Floor 2)"
     CLEAR_D_OFFICE =                            "D Office Cleared"
     FRONT_ONE_BARREL_1 =                        "Front One Fairway Barrel"
     FRONT_ONE_BARREL_2 =                        "Front One Golfing Barrel"
@@ -982,6 +990,8 @@ LOCATION_DEFINITIONS: List[ToontownLocationDefinition] = [
     ToontownLocationDefinition(ToontownLocationName.C_OFFICE_BARREL_2,      ToontownLocationType.FACILITIES, ToontownRegionName.LBHQ, [Rule.OfficeCKey,      Rule.HasLevelSixOffenseGag]),
     ToontownLocationDefinition(ToontownLocationName.C_OFFICE_BARREL_3,      ToontownLocationType.FACILITIES, ToontownRegionName.LBHQ, [Rule.OfficeCKey,      Rule.HasLevelSevenOffenseGag]),
     ToontownLocationDefinition(ToontownLocationName.C_OFFICE_BARREL_4,      ToontownLocationType.FACILITIES, ToontownRegionName.LBHQ, [Rule.OfficeCKey,      Rule.HasLevelSevenOffenseGag]),
+    ToontownLocationDefinition(ToontownLocationName.C_OFFICE_BARREL_5,      ToontownLocationType.FACILITIES, ToontownRegionName.LBHQ, [Rule.OfficeCKey,      Rule.HasLevelSevenOffenseGag]),
+    ToontownLocationDefinition(ToontownLocationName.C_OFFICE_BARREL_6,      ToontownLocationType.FACILITIES, ToontownRegionName.LBHQ, [Rule.OfficeCKey,      Rule.HasLevelSevenOffenseGag]),
     ToontownLocationDefinition(ToontownLocationName.CLEAR_C_OFFICE,         ToontownLocationType.FACILITIES, ToontownRegionName.LBHQ, [Rule.OfficeCKey,      Rule.HasLevelSevenOffenseGag]),
     ToontownLocationDefinition(ToontownLocationName.D_OFFICE_BARREL_1,      ToontownLocationType.FACILITIES, ToontownRegionName.LBHQ, [Rule.OfficeDKey,      Rule.HasLevelSevenOffenseGag]),
     ToontownLocationDefinition(ToontownLocationName.D_OFFICE_BARREL_2,      ToontownLocationType.FACILITIES, ToontownRegionName.LBHQ, [Rule.OfficeDKey,      Rule.HasLevelSevenOffenseGag]),
