@@ -1205,7 +1205,7 @@ __registerSuitAttributes(__BIG_WIG)
 __CLERK_ATTACKS = set()
 __CLERK_ATTACKS.add(SuitAttackAttribute(
     attack=SuitAttackType.GUILT_TRIP,
-    damage={25: 24,},
+    damage={14: 12,},
     accuracy=60,
     weight=50,
 ))
@@ -1220,11 +1220,11 @@ __CLERK_ATTACKS.add(SuitAttackAttribute(
 
 __CLERK_ATTACKS.add(SuitAttackAttribute(
     attack=SuitAttackType.MUMBO_JUMBO,
-    damage={25: 26,},
+    damage={14: 13,},
     accuracy=80,
     weight=50,
 ))
-__CLERK: SuitAttributes = SuitAttributes(key='clerk', name=TTLocalizer.SuitClerk, singular=TTLocalizer.SuitClerkS, plural=TTLocalizer.SuitClerkP, tier=24, attacks=__CLERK_ATTACKS)
+__CLERK: SuitAttributes = SuitAttributes(key='clerk', name=TTLocalizer.SuitClerk, singular=TTLocalizer.SuitClerkS, plural=TTLocalizer.SuitClerkP, tier=13, attacks=__CLERK_ATTACKS)
 __registerSuitAttributes(__CLERK)
 
 """

@@ -6,7 +6,7 @@ from toontown.suit import SuitDNA
 from direct.directnotify import DirectNotifyGlobal
 from . import LevelBattleManagerAI
 import types
-import random
+import random, math
 
 class LevelSuitPlannerAI(DirectObject.DirectObject):
     notify = DirectNotifyGlobal.directNotify.newCategory('LevelSuitPlannerAI')
@@ -79,7 +79,7 @@ class LevelSuitPlannerAI(DirectObject.DirectObject):
         if suitDict['boss'] and suitDict['track'] == 'l':
             dna.newSuit('clerk')
             suit.dna = dna
-            suit.setLevel(25)
+            suit.setLevel(14 + int(math.ceil(suitDict['level'] / 3)))
         else:
             dna.newSuitRandom(level=SuitDNA.getRandomSuitType(suitDict['level']), dept=suitDict['track'])
             suit.dna = dna
