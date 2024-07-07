@@ -71,7 +71,10 @@ class Rule(Enum):
     TierEightLawbot  = auto()
     TierEightBossbot = auto()
 
+    TierBossSellbot = auto()
+    TierBossCashbot = auto()
     TierBossLawbot  = auto()
+    TierBossBossbot = auto()
 
     ### Facility Keys ###
 

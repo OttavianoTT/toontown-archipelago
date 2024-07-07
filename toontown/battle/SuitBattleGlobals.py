@@ -545,6 +545,34 @@ __THE_BIG_CHEESE_ATTACKS.add(SuitAttackAttribute(
 __THE_BIG_CHEESE: SuitAttributes = SuitAttributes(key='tbc', name=TTLocalizer.SuitTheBigCheese, singular=TTLocalizer.SuitTheBigCheeseS, plural=TTLocalizer.SuitTheBigCheeseP, tier=7, attacks=__THE_BIG_CHEESE_ATTACKS)
 __registerSuitAttributes(__THE_BIG_CHEESE)
 
+__CLUB_PRESIDENT_ATTACKS = set()
+__CLUB_PRESIDENT_ATTACKS.add(SuitAttackAttribute(
+    attack=SuitAttackType.CIGAR_SMOKE,
+    damage={16: 12,},
+    accuracy=85,
+    weight=20,
+))
+__CLUB_PRESIDENT_ATTACKS.add(SuitAttackAttribute(
+    attack=SuitAttackType.PINK_SLIP,
+    damage={16: 16,},
+    accuracy=95,
+    weight=10,
+))
+__CLUB_PRESIDENT_ATTACKS.add(SuitAttackAttribute(
+    attack=SuitAttackType.POWER_TRIP,
+    damage={16: 15,},
+    accuracy=60,
+    weight=50,
+))
+__CLUB_PRESIDENT_ATTACKS.add(SuitAttackAttribute(
+    attack=SuitAttackType.TEE_OFF,
+    damage={16: 17,},
+    accuracy=70,
+    weight=20,
+))
+__CLUB_PRESIDENT: SuitAttributes = SuitAttributes(key='president', name=TTLocalizer.SuitPresident, singular=TTLocalizer.SuitPresidentS, plural=TTLocalizer.SuitPresidentP, tier=15, attacks=__CLUB_PRESIDENT_ATTACKS)
+__registerSuitAttributes(__CLUB_PRESIDENT)
+
 __COLD_CALLER_ATTACKS = set()
 __COLD_CALLER_ATTACKS.add(SuitAttackAttribute(
     attack=SuitAttackType.FREEZE_ASSETS,
@@ -763,6 +791,22 @@ __MR_HOLLYWOOD_ATTACKS.add(SuitAttackAttribute(
 __MR_HOLLYWOOD: SuitAttributes = SuitAttributes(key='mh', name=TTLocalizer.SuitMrHollywood, singular=TTLocalizer.SuitMrHollywoodS, plural=TTLocalizer.SuitMrHollywoodP, tier=7, attacks=__MR_HOLLYWOOD_ATTACKS)
 __registerSuitAttributes(__MR_HOLLYWOOD)
 
+__FACTORY_FOREMAN_ATTACKS = set()
+__FACTORY_FOREMAN_ATTACKS.add(SuitAttackAttribute(
+    attack=SuitAttackType.RED_TAPE,
+    damage={8: 8,},
+    accuracy=50,
+    weight=50,
+))
+__FACTORY_FOREMAN_ATTACKS.add(SuitAttackAttribute(
+    attack=SuitAttackType.FIRED,
+    damage={8: 10,},
+    accuracy=75,
+    weight=50,
+))
+__FACTORY_FOREMAN: SuitAttributes = SuitAttributes(key='foreman', name=TTLocalizer.SuitForeman, singular=TTLocalizer.SuitForemanS, plural=TTLocalizer.SuitForemanP, tier=7, attacks=__FACTORY_FOREMAN_ATTACKS)
+__registerSuitAttributes(__FACTORY_FOREMAN)
+
 __SHORT_CHANGE_ATTACKS = set()
 __SHORT_CHANGE_ATTACKS.add(SuitAttackAttribute(
     attack=SuitAttackType.WATERCOOLER,
@@ -974,6 +1018,22 @@ __ROBBER_BARON_ATTACKS.add(SuitAttackAttribute(
 ))
 __ROBBER_BARON: SuitAttributes = SuitAttributes(key='rb', name=TTLocalizer.SuitRobberBaron, singular=TTLocalizer.SuitRobberBaronS, plural=TTLocalizer.SuitRobberBaronP, tier=7, attacks=__ROBBER_BARON_ATTACKS)
 __registerSuitAttributes(__ROBBER_BARON)
+
+__SUPERVISOR_ATTACKS = set()
+__SUPERVISOR_ATTACKS.add(SuitAttackAttribute(
+    attack=SuitAttackType.SYNERGY,
+    damage={10: 9,},
+    accuracy=60,
+    weight=50,
+))
+__SUPERVISOR_ATTACKS.add(SuitAttackAttribute(
+    attack=SuitAttackType.CALCULATE,
+    damage={10: 11,},
+    accuracy=60,
+    weight=50,
+))
+__SUPERVISOR: SuitAttributes = SuitAttributes(key='supervisor', name=TTLocalizer.SuitSupervisor, singular=TTLocalizer.SuitSupervisorS, plural=TTLocalizer.SuitSupervisorP, tier=9, attacks=__SUPERVISOR_ATTACKS)
+__registerSuitAttributes(__SUPERVISOR)
 
 __BOTTOM_FEEDER_ATTACKS = set()
 __BOTTOM_FEEDER_ATTACKS.add(SuitAttackAttribute(

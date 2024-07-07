@@ -371,10 +371,10 @@ def TierEightCogs(state: CollectionState, locentr: LocEntrDef, world: MultiWorld
     return any(state.can_reach(pg.value, None, player) for pg in pgs) \
            and passes_rule(Rule.HasLevelFourOffenseGag, state, locentr, world, player, options)
 
-#@rule(Rule.TierBossSellbot, ToontownRegionName.SBHQ)
-#@rule(Rule.TierBossCashbot, ToontownRegionName.CBHQ)
+@rule(Rule.TierBossSellbot, ToontownRegionName.SBHQ)
+@rule(Rule.TierBossCashbot, ToontownRegionName.CBHQ)
 @rule(Rule.TierBossLawbot,  ToontownRegionName.LBHQ)
-#@rule(Rule.TierBossBossbot, ToontownRegionName.BBHQ)
+@rule(Rule.TierBossBossbot, ToontownRegionName.BBHQ)
 def TierBossCogs(state: CollectionState, locentr: LocEntrDef, world: MultiWorld, player: int, options: ToontownOptions, argument: Tuple = None):
     pgs = [
         # ToontownRegionName.MML,

@@ -80,6 +80,18 @@ class LevelSuitPlannerAI(DirectObject.DirectObject):
             dna.newSuit('clerk')
             suit.dna = dna
             suit.setLevel(14 + int(math.ceil(suitDict['level'] / 3)))
+        elif suitDict['boss'] and suitDict['track'] == 'm':
+            dna.newSuit('supervisor')
+            suit.dna = dna
+            suit.setLevel(10 + int(math.ceil(suitDict['level'] / 3)))
+        elif suitDict['boss'] and suitDict['track'] == 's':
+            dna.newSuit('foreman')
+            suit.dna = dna
+            suit.setLevel(8 + int(math.ceil(suitDict['level'] / 3)))
+        elif suitDict['boss'] and suitDict['track'] == 'c':
+            dna.newSuit('president')
+            suit.dna = dna
+            suit.setLevel(16 + int(math.ceil(suitDict['level'] / 3)))
         else:
             dna.newSuitRandom(level=SuitDNA.getRandomSuitType(suitDict['level']), dept=suitDict['track'])
             suit.dna = dna

@@ -49,7 +49,10 @@ suitHeadTypes = [
     'tf',
     'm',
     'mh',
-    'clerk'
+    'foreman',
+    'supervisor',
+    'clerk',
+    'president'
 ]
 
 suitATypes = [
@@ -67,7 +70,10 @@ suitATypes = [
     'tf',
     'm',
     'mh',
-    'clerk'
+    'foreman',
+    'supervisor',
+    'clerk',
+    'president'
 ]
 
 suitBTypes = [
@@ -497,7 +503,10 @@ GENERAL_SUIT_VISUALS: Set[SuitVisual] = {
     SuitVisual('tf',  5.25 / aSize,  salesPolyColor,                None,                         None,                   'twoface',             6.95),
     SuitVisual('m',   5.75 / aSize,  salesPolyColor,                None,                         'mingler.jpg',          'twoface',             7.61),
     SuitVisual('mh',  7.0 / aSize,   salesPolyColor,                None,                         None,                   'yesman',              8.95),
+    SuitVisual('foreman',  7.0 / aSize,   salesPolyColor,                None,                         None,                   'yesman',              8.95),
+    SuitVisual('supervisor',  7.0 / aSize,   moneyPolyColor,                None,                         'robber-baron.jpg',     'yesman',              8.95),
     SuitVisual('clerk',  7.0 / aSize,   legalPolyColor,                None,                         None,                   'bigwig',              8.69),
+    SuitVisual('president', 7.0 / aSize,   VBase4(0.75, 0.95, 0.75, 1.0), None,                         None,                   'bigcheese',           9.34),
 }
 
 SuitClotheParts = ['blazer', 'leg', 'sleeve']
@@ -546,7 +555,10 @@ def getWaiterClotheTexture():
 
 CUSTOM_SUIT_CLOTHES: Set[CustomSuitClothes] = set()
 
-customSuitToDept = {'clerk': 'l',}
+customSuitToDept = {'foreman': 's',
+                    'supervisor': 'm',
+                    'clerk': 'l',
+                    'president' : 'c'}
 
 def getSuitDept(name):
     index = suitHeadTypes.index(name)

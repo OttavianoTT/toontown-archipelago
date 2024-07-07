@@ -21,6 +21,7 @@ def cog_code_to_ap_location(cog_code: str) -> str:
         'tf': (ToontownLocationName.TWO_FACE_DEFEATED.value, ToontownLocationName.TWO_FACE_MAXED.value),
         'm': (ToontownLocationName.MINGLER_DEFEATED.value, ToontownLocationName.MINGLER_MAXED.value),
         'mh': (ToontownLocationName.MR_HOLLYWOOD_DEFEATED.value, ToontownLocationName.MR_HOLLYWOOD_MAXED.value),
+        'foreman': (ToontownLocationName.FOREMAN_DEFEATED.value, ToontownLocationName.FOREMAN_MAXED.value),
 
         'sc': (ToontownLocationName.SHORT_CHANGE_DEFEATED.value, ToontownLocationName.SHORT_CHANGE_MAXED.value),
         'pp': (ToontownLocationName.PENNY_PINCHER_DEFEATED.value, ToontownLocationName.PENNY_PINCHER_MAXED.value),
@@ -30,6 +31,7 @@ def cog_code_to_ap_location(cog_code: str) -> str:
         'mb': (ToontownLocationName.MONEY_BAGS_DEFEATED.value, ToontownLocationName.MONEY_BAGS_MAXED.value),
         'ls': (ToontownLocationName.LOAN_SHARK_DEFEATED.value, ToontownLocationName.LOAN_SHARK_MAXED.value),
         'rb': (ToontownLocationName.ROBBER_BARRON_DEFEATED.value, ToontownLocationName.ROBBER_BARRON_MAXED.value),
+        'supervisor': (ToontownLocationName.SUPERVISOR_DEFEATED.value, ToontownLocationName.SUPERVISOR_MAXED.value),
 
         'bf': (ToontownLocationName.BOTTOM_FEEDER_DEFEATED.value, ToontownLocationName.BOTTOM_FEEDER_MAXED.value),
         'b': (ToontownLocationName.BLOODSUCKER_DEFEATED.value, ToontownLocationName.BLOODSUCKER_MAXED.value),
@@ -39,7 +41,7 @@ def cog_code_to_ap_location(cog_code: str) -> str:
         'sd': (ToontownLocationName.SPIN_DOCTOR_DEFEATED.value, ToontownLocationName.SPIN_DOCTOR_MAXED.value),
         'le': (ToontownLocationName.LEGAL_EAGLE_DEFEATED.value, ToontownLocationName.LEGAL_EAGLE_MAXED.value),
         'bw': (ToontownLocationName.BIG_WIG_DEFEATED.value, ToontownLocationName.BIG_WIG_MAXED.value),
-        'clerk': (ToontownLocationName.CLERK_DEFEATED.value, ToontownLocationName.BIG_WIG_MAXED.value),
+        'clerk': (ToontownLocationName.CLERK_DEFEATED.value, ToontownLocationName.CLERK_MAXED.value),
 
         'f': (ToontownLocationName.FLUNKY_DEFEATED.value, ToontownLocationName.FLUNKY_MAXED.value),
         'p': (ToontownLocationName.PENCIL_PUSHER_DEFEATED.value, ToontownLocationName.PENCIL_PUSHER_MAXED.value),
@@ -48,7 +50,8 @@ def cog_code_to_ap_location(cog_code: str) -> str:
         'ds': (ToontownLocationName.DOWNSIZER_DEFEATED.value, ToontownLocationName.DOWNSIZER_MAXED.value),
         'hh': (ToontownLocationName.HEAD_HUNTER_DEFEATED.value, ToontownLocationName.HEAD_HUNTER_MAXED.value),
         'cr': (ToontownLocationName.CORPORATE_RAIDER_DEFEATED.value, ToontownLocationName.CORPORATE_RAIDER_MAXED.value),
-        'tbc': (ToontownLocationName.BIG_CHEESE_DEFEATED.value, ToontownLocationName.BIG_CHEESE_MAXED.value)
+        'tbc': (ToontownLocationName.BIG_CHEESE_DEFEATED.value, ToontownLocationName.BIG_CHEESE_MAXED.value),
+        'president': (ToontownLocationName.PRESIDENT_DEFEATED.value, ToontownLocationName.PRESIDENT_MAXED.value)
 
     }.get(cog_code, '')
 

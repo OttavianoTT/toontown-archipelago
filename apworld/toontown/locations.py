@@ -41,10 +41,13 @@ class ToontownLocationName(Enum):
     LEGAL_EAGLE_DEFEATED =                      "Cog Gallery (Legal Eagle)"
     CORPORATE_RAIDER_DEFEATED =                 "Cog Gallery (Corporate Raider)"
     MR_HOLLYWOOD_DEFEATED =                     "Cog Gallery (Mr. Hollywood)"
+    FOREMAN_DEFEATED =                          "Cog Gallery (Factory Foreman)"
     ROBBER_BARRON_DEFEATED =                    "Cog Gallery (Robber Baron)"
+    SUPERVISOR_DEFEATED =                       "Cog Gallery (Mint Supervisor)"
     BIG_WIG_DEFEATED =                          "Cog Gallery (Big Wig)"
-    CLERK_DEFEATED =                          "Cog Gallery (Big Wig)"
+    CLERK_DEFEATED =                          "Cog Gallery (Clerk)"
     BIG_CHEESE_DEFEATED =                       "Cog Gallery (Big Cheese)"
+    PRESIDENT_DEFEATED =                        "Cog Gallery (Club President)"
     COLD_CALLER_MAXED =                         "Cog Gallery Maxed (Cold Caller)"
     SHORT_CHANGE_MAXED =                        "Cog Gallery Maxed (Short Change)"
     BOTTOM_FEEDER_MAXED =                       "Cog Gallery Maxed (Bottom Feeder)"
@@ -77,6 +80,10 @@ class ToontownLocationName(Enum):
     ROBBER_BARRON_MAXED =                       "Cog Gallery Maxed (Robber Baron)"
     BIG_WIG_MAXED =                             "Cog Gallery Maxed (Big Wig)"
     BIG_CHEESE_MAXED =                          "Cog Gallery Maxed (Big Cheese)"
+    FOREMAN_MAXED =                             "Cog Gallery Maxed (Factory Foreman)"
+    SUPERVISOR_MAXED =                          "Cog Gallery Maxed (Mint Supervisor)"
+    CLERK_MAXED =                          "Cog Gallery Maxed (Clerk)"
+    PRESIDENT_MAXED =                           "Cog Gallery Maxed (Club President)"
     TOONUP_FEATHER_UNLOCKED =                   "Feather Trained (Toon-up Training)"
     TOONUP_MEGAPHONE_UNLOCKED =                 "Megaphone Trained (Toon-up Training)"
     TOONUP_LIPSTICK_UNLOCKED =                  "Lipstick Trained (Toon-up Training)"
@@ -724,10 +731,13 @@ LOCATION_DEFINITIONS: List[ToontownLocationDefinition] = [
     ToontownLocationDefinition(ToontownLocationName.LEGAL_EAGLE_DEFEATED,       ToontownLocationType.GALLERY,     ToontownRegionName.GALLERY, [Rule.TierEightLawbot]),
     ToontownLocationDefinition(ToontownLocationName.CORPORATE_RAIDER_DEFEATED,  ToontownLocationType.GALLERY,     ToontownRegionName.GALLERY, [Rule.TierEightBossbot]),
     ToontownLocationDefinition(ToontownLocationName.MR_HOLLYWOOD_DEFEATED,      ToontownLocationType.GALLERY,     ToontownRegionName.GALLERY, [Rule.TierEightSellbot]),
+    ToontownLocationDefinition(ToontownLocationName.FOREMAN_DEFEATED,      ToontownLocationType.GALLERY,     ToontownRegionName.GALLERY, [Rule.TierBossSellbot]),
     ToontownLocationDefinition(ToontownLocationName.ROBBER_BARRON_DEFEATED,     ToontownLocationType.GALLERY,     ToontownRegionName.GALLERY, [Rule.TierEightCashbot]),
-    ToontownLocationDefinition(ToontownLocationName.BIG_WIG_DEFEATED,           ToontownLocationType.GALLERY,     ToontownRegionName.GALLERY, [Rule.TierBossLawbot]),
-    ToontownLocationDefinition(ToontownLocationName.CLERK_DEFEATED,           ToontownLocationType.GALLERY,     ToontownRegionName.GALLERY, [Rule.TierEightLawbot]),
+    ToontownLocationDefinition(ToontownLocationName.BIG_WIG_DEFEATED,           ToontownLocationType.GALLERY,     ToontownRegionName.GALLERY, [Rule.TierEightLawbot]),
+    ToontownLocationDefinition(ToontownLocationName.SUPERVISOR_DEFEATED,     ToontownLocationType.GALLERY,     ToontownRegionName.GALLERY, [Rule.TierBossCashbot]),
+    ToontownLocationDefinition(ToontownLocationName.CLERK_DEFEATED,           ToontownLocationType.GALLERY,     ToontownRegionName.GALLERY, [Rule.TierBossLawbot]),
     ToontownLocationDefinition(ToontownLocationName.BIG_CHEESE_DEFEATED,        ToontownLocationType.GALLERY,     ToontownRegionName.GALLERY, [Rule.TierEightBossbot]),
+    ToontownLocationDefinition(ToontownLocationName.PRESIDENT_DEFEATED,        ToontownLocationType.GALLERY,     ToontownRegionName.GALLERY, [Rule.TierBossBossbot]),
     # endregion
     # region Cog Gallery Maxing
     ToontownLocationDefinition(ToontownLocationName.COLD_CALLER_MAXED,          ToontownLocationType.GALLERY_MAX, ToontownRegionName.GALLERY, [Rule.TierOneCogs]),
