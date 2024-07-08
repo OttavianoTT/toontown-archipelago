@@ -547,7 +547,7 @@ __registerSuitAttributes(__THE_BIG_CHEESE)
 
 __CLUB_PRESIDENT_ATTACKS = set()
 __CLUB_PRESIDENT_ATTACKS.add(SuitAttackAttribute(
-    attack=SuitAttackType.CIGAR_SMOKE,
+    attack=SuitAttackType.FIRED,
     damage={16: 12,},
     accuracy=85,
     weight=20,

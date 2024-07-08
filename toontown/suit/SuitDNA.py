@@ -511,7 +511,7 @@ GENERAL_SUIT_VISUALS: Set[SuitVisual] = {
     SuitVisual('foreman',  7.0 / aSize,   salesPolyColor,                None,                         None,                   'yesman',              8.95),
     SuitVisual('supervisor',  7.0 / aSize,   moneyPolyColor,                None,                         'robber-baron.jpg',     'yesman',              8.95),
     SuitVisual('clerk',  7.0 / aSize,   legalPolyColor,                None,                         None,                   'bigwig',              8.69),
-    SuitVisual('president', 7.0 / aSize,   VBase4(0.75, 0.95, 0.75, 1.0), None,                         None,                   'bigcheese',           9.34),
+    SuitVisual('president', 7.0 / aSize,   VBase4(0.75, 0.95, 0.75, 1.0), None,                         None,                   'dog',           9.34),
 }
 
 SuitClotheParts = ['blazer', 'leg', 'sleeve']
